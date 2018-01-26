@@ -1,5 +1,5 @@
 function concatenate(lastName = "", firstName = "", space = "") {
-    return lastName + space + firstName;
+	return lastName + space + firstName;
 }
  
 let lName = "中田";
