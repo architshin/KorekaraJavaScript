@@ -12,3 +12,5 @@ let name3 = concatenate(lName);
 console.log("第2、第3引数の渡し忘れ: " + name3);
 let name4 = concatenate();
 console.log("全ての引数の渡し忘れ: " + name4);
+let name5 = concatenate(undefined, "美奈子");
+console.log("引数にundefined: " + name5);
