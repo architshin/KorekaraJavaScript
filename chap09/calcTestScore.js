@@ -9,7 +9,7 @@ let taroEnglish = 92;
 let taroMath = 87;
 let taroJapanese = 74;
 printScore(taroName, taroEnglish, taroMath, taroJapanese);
- 
+
 let hanakoName = "はなこ";
 let hanakoEnglish = 79;
 let hanakoMath = 95;
