@@ -1,8 +1,8 @@
-//たろうさん用のTestScoreAdvを使って、データ表示。
+//たろうさん用のTestScoreWithConstructorを使って、データ表示。
 let taro = new TestScoreWithConstructor("たろう", 92, 87, 74);
 taro.printScore();
 
-//はなこさん用のTestScoreAdvを使って、データ表示。
+//はなこさん用のTestScoreWithConstructorを使って、データ表示。
 let hanako = new TestScoreWithConstructor("はなこ", 79, 95, 83);
 hanako.printScore();
 
