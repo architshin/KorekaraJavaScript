@@ -21,7 +21,7 @@ function onRemoveListItemButtonClick() {
 	//リスト表示要素を取得。
 	let skillList = document.getElementById("skillList");
 	//リスト表示要素内の末尾の要素を削除。
-	skillList.removeChild(skillList.lastElementChild);	
+	skillList.removeChild(skillList.lastElementChild);
 }
 
 //［入力された情報でリンクを作成］ボタンをクリックした時の処理。
