@@ -6,7 +6,7 @@ function onCheckallChanged() {
 	if(checkall.checked) {
 		checkall.nextSibling.textContent = "すべて外す";
 	} else {
-		checkall.nextSibling.textContent = "すべてチェック";		
+		checkall.nextSibling.textContent = "すべてチェック";
 	}
 	//name属性がskillのチェックボックス要素を取得。
 	let checkboxes = document.getElementsByName("skill");
