@@ -1,5 +1,5 @@
-//画面がロードされた時の処理関数。
-function init() {
+//画面がロードされた時の処理をリスナ登録。
+window.addEventListener("DOMContentLoaded", function() {
 	//入力エリア要素を取得。
 	let messageArea = document.getElementById("messageArea");
 	//入力エリアにinputリスナ登録。
@@ -19,7 +19,4 @@ function init() {
 			messageArea.removeAttribute("class");
 		}
 	});
-}
-
-//画面がロードされた時の処理をリスナ登録。
-window.addEventListener("DOMContentLoaded", init);
+});
