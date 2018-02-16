@@ -53,10 +53,10 @@ function checkInput() {
 	} else if(!isFinite(height)) {
 		buttonEnabled = false;
 		heightInputMsg.textContent = "身長には数値を入力してください。";
-	//0が入力されたなら…
-	} else if(height == 0) {
+	//0以下が入力されたなら…
+	} else if(height <= 0) {
 		buttonEnabled = false;
-		heightInputMsg.textContent = "身長に0はおかしいです。";
+		heightInputMsg.textContent = "身長に正しい数値を入力してください。";
 	//入力値が適切なら…
 	} else {
 		//バリデーションメッセージを削除。
@@ -73,9 +73,9 @@ function checkInput() {
 	} else if(!isFinite(weight)) {
 		buttonEnabled = false;
 		weightInputMsg.textContent = "体重には数値を入力してください。";
-	} else if(weight == 0) {
+	} else if(weight <= 0) {
 		buttonEnabled = false;
-		weightInputMsg.textContent = "体重に0はおかしいです。";
+		weightInputMsg.textContent = "体重に正しい数値を入力してください。";
 	} else {
 		weightInputMsg.textContent = "";
 	}
