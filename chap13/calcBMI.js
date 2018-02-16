@@ -32,20 +32,38 @@ function onCalcBMIButtonClick() {
 	resultMessage.removeAttribute("class");
 }
 
-function checkInput(event) {
+//バリデーション用関数。
+function checkInput() {
+	//［計算］ボタンを有効にするかどうかのフラグ。
 	let buttonEnabled = true;
+
+	//身長のinput要素を取得。
 	let heightInput = document.getElementById("heightInput");
+	//入力された身長の値を取得。
 	let height = heightInput.value;
+	//身長のバリデーションメッセージを表示するspan要素を取得。
 	let heightInputMsg = document.getElementById("heightInputMsg");
+	//未入力なら…
 	if(height.length == 0) {
+		//［計算］ボタンを無効に。
 		buttonEnabled = false;
+		//バリデーションメッセージを表示。
 		heightInputMsg.textContent = "身長を入力してください。";
+	//数値以外が入力されたなら…
 	} else if(!isFinite(height)) {
 		buttonEnabled = false;
 		heightInputMsg.textContent = "身長には数値を入力してください。";
+	//0が入力されたなら…
+	} else if(height == 0) {
+		buttonEnabled = false;
+		heightInputMsg.textContent = "身長に0はおかしいです。";
+	//入力値が適切なら…
 	} else {
+		//バリデーションメッセージを削除。
 		heightInputMsg.textContent = "";
 	}
+
+	//体重のバリデーション。内容は身長と同じ。
 	let weightInput = document.getElementById("weightInput");
 	let weight = weightInput.value;
 	let weightInputMsg = document.getElementById("weightInputMsg");
@@ -55,23 +73,38 @@ function checkInput(event) {
 	} else if(!isFinite(weight)) {
 		buttonEnabled = false;
 		weightInputMsg.textContent = "体重には数値を入力してください。";
+	} else if(weight == 0) {
+		buttonEnabled = false;
+		weightInputMsg.textContent = "体重に0はおかしいです。";
 	} else {
 		weightInputMsg.textContent = "";
 	}
+
+	//［計算］ボタン要素を取得。
 	let calcBMIButton = document.getElementById("calcBMIButton");
+	//［計算］ボタンが有効なら…
 	if(buttonEnabled) {
+		//disabled属性を削除。
 		calcBMIButton.removeAttribute("disabled");
-	}
-	else {
+	//［計算］ボタンが無効なら…
+	} else {
+		//disabled属性を追加。
 		calcBMIButton.setAttribute("disabled", "disabled");
 	}
 }
 
+//画面がロードされた時の処理を登録。
 window.addEventListener("DOMContentLoaded", function() {
+	//身長のinput要素を取得。
 	let heightInput = document.getElementById("heightInput");
+	//身長入力欄が変更された時の処理を登録。
 	heightInput.addEventListener("input", checkInput);
+	//身長入力欄からフォーカスが外れた時の処理を登録。
 	heightInput.addEventListener("focusout", checkInput);
+	//体重のinput要素を取得。
 	let weightInput = document.getElementById("weightInput");
+	//体重入力欄が変更された時の処理を登録。
 	weightInput.addEventListener("input", checkInput);
+	//体重入力欄からフォーカスが外れた時の処理を登録。
 	weightInput.addEventListener("focusout", checkInput);
 });
