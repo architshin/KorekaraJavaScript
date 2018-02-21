@@ -1,3 +1,5 @@
+"use strict";
+
 //2011年10月5日のDateオブジェクトを生成。
 let jobs = new Date(2011, 10, 5);
 //jobsを文字列に整形して表示。

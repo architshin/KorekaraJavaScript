@@ -1,3 +1,5 @@
+"use strict";
+
 //［タグ名で取得］ボタンクリック時の処理。
 function onTagButtonClick() {
 	//タグ名がbuttonの要素を取得。

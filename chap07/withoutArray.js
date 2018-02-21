@@ -1,3 +1,5 @@
+"use strict";
+
 let num1 = 8;
 let num2 = 9;
 let num3 = 17;

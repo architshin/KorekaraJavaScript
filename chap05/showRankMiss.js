@@ -1,3 +1,5 @@
+"use strict";
+
 let score = Math.round(Math.random() * 100);
 console.log("得点: " + score);
 if(score >= 80) {

@@ -1,3 +1,5 @@
+"use strict";
+
 class TestScore {
 	constructor() {
 		this.name = "";

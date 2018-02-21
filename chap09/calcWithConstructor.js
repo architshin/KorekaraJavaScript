@@ -1,3 +1,5 @@
+"use strict";
+
 //たろうさん用のTestScoreWithConstructorを使って、データ表示。
 let taro = new TestScoreWithConstructor("たろう", 92, 87, 74);
 taro.printScore();

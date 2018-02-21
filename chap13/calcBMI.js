@@ -1,3 +1,5 @@
+"use strict";
+
 //［計算］ボタンがクリックされた時の処理関数。
 function onCalcBMIButtonClick() {
 	//身長入力input要素を取得。

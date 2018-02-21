@@ -1,3 +1,5 @@
+"use strict";
+
 //［リスト末尾に追加］ボタンをクリックした時の処理。
 function onAddListItemButtonClick() {
 	//追加する文字列の入力欄input要素を取得。

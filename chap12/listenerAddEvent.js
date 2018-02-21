@@ -1,3 +1,5 @@
+"use strict";
+
 //画面がロードされた時の処理をリスナ登録。
 window.addEventListener("DOMContentLoaded", function() {
 	//入力エリア要素を取得。

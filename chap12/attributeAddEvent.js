@@ -1,3 +1,5 @@
+"use strict";
+
 //［すべて…］チェックボックスをクリックしたときの処理関数。
 function onCheckallChanged() {
 	//［すべて…］チェックボックス要素を取得。

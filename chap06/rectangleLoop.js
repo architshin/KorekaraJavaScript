@@ -1,3 +1,5 @@
+"use strict";
+
 let width = Math.round(Math.random() * 10);
 let height = Math.round(Math.random() * 10);
 let str = "";

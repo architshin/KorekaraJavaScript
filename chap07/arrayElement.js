@@ -1,3 +1,5 @@
+"use strict";
+
 let nameList = ["松田", "田中", "中山", "山本", "本田"];
 
 console.log("1人目は" + nameList[0]);

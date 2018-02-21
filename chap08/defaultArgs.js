@@ -1,3 +1,5 @@
+"use strict";
+
 function concatenate(lastName = "", firstName = "", space = "") {
 	return lastName + space + firstName;
 }

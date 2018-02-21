@@ -1,3 +1,5 @@
+"use strict";
+
 //13の倍数かどうかを調べる関数。
 function isMultiplesOf13(currentValue, index, array) {
 	return currentValue % 13 == 0;

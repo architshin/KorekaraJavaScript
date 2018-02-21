@@ -1,3 +1,5 @@
+"use strict";
+
 //画面がロードされたタイミングで行う処理。
 window.onload = function() {
 	//ドロップダウン要素を取得。

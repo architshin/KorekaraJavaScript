@@ -1,3 +1,5 @@
+"use strict";
+
 let nums = [];
 for(let i = 0; i < 30; i++) {
 	nums[i] = Math.round(Math.random() * 100);

@@ -1,3 +1,5 @@
+"use strict";
+
 let nums = [8, 9, 17, 26, 43];
 
 console.log("1個目は" + nums[0]);

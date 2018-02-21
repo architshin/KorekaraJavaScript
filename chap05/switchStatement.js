@@ -1,3 +1,5 @@
+"use strict";
+
 let num = Math.round(Math.random() * 5);
 console.log("現在の値: " + num);
 switch(num) {

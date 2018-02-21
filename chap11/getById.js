@@ -1,3 +1,5 @@
+"use strict";
+
 //［h1要素の取得］ボタンクリック時の処理。
 function onH1ButtonClick() {
 	//idがheadTitleの要素を取得。

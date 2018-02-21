@@ -1,3 +1,5 @@
+"use strict";
+
 let numes = [];
 let denomis = [];
 for(let i = 0; i <= 4; i++) {

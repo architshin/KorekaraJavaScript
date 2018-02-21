@@ -1,3 +1,5 @@
+"use strict";
+
 //Setオブジェクトを生成。
 let scoreList = new Set();
 //データ登録。

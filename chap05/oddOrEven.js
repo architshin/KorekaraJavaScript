@@ -1,3 +1,5 @@
+"use strict";
+
 let num = Math.round(Math.random() * 100);
 console.log("現在の値: " + num);
 let rem = num % 2;

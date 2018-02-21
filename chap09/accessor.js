@@ -1,3 +1,5 @@
+"use strict";
+
 class AccessorProp {
 	//コンストラクタ。氏名を受け取りプロパティに格納。
 	constructor(lastName, firstName) {

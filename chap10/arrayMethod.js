@@ -1,3 +1,5 @@
+"use strict";
+
 let nameList = ["松田", "田中", "中山", "山本", "本田"];
 let nameListStr = nameList.toString();
 console.log(nameListStr);

@@ -1,3 +1,5 @@
+"use strict";
+
 function calcArraySum(list) {
 	let sum = 0;
 	for(let num of list) {

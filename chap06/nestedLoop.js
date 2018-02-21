@@ -1,3 +1,5 @@
+"use strict";
+
 console.log("外のループ開始");
 for(let i = 1; i <= 3; i++) {
 	console.log("内のループ開始");
