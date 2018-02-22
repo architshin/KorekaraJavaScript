@@ -1,9 +1,9 @@
 "use strict";
 
-let str = "計算結果: ";
+let str = "となりました";
 let num1 = 123;
 let num2 = 456;
 
-let ans1 = str + (num1 + num2);
+let ans1 = num1 + num2 + str;
 
 console.log(ans1);
