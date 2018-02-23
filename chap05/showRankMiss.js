@@ -10,7 +10,6 @@ if(score >= 70) {
 }
 if(score >= 60) {
 	console.log("成績は可です");
-}
-else {
+} else {
 	console.log("成績は不可です");
 }
