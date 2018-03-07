@@ -11,7 +11,7 @@ function onAddListItemButtonClick() {
 	//li要素のテキスト部分に入力された文字列を設定。
 	listItem.textContent = addListItemInputText;
 	//class属性にblueTextを設定。
-	listItem.setAttribute("class", "blueText");
+	listItem.className = "blueText";
 	//リスト表示要素を取得。
 	let skillList = document.getElementById("skillList");
 	//リスト表示の末尾に生成したli要素を追加。
