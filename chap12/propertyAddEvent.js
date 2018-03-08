@@ -33,5 +33,5 @@ window.onload = function() {
 		let paymentSelectResult = document.getElementById("paymentSelectResult");
 		//手数料を表示。
 		paymentSelectResult.textContent = paymentSelectResultStr;
-	}
-}
+	};
+};
