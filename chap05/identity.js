@@ -1,3 +1,5 @@
+"use strict";
+
 let num = 48;
 let str = "48";
 if(num == str) {

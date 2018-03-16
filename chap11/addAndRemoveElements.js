@@ -1,3 +1,5 @@
+"use strict";
+
 //［リスト末尾に追加］ボタンをクリックした時の処理。
 function onAddListItemButtonClick() {
 	//追加する文字列の入力欄input要素を取得。
@@ -8,8 +10,8 @@ function onAddListItemButtonClick() {
 	let listItem = document.createElement("li");
 	//li要素のテキスト部分に入力された文字列を設定。
 	listItem.textContent = addListItemInputText;
-	//class属性にblueTextを設定。
-	listItem.setAttribute("class", "blueText");
+	//class属性にblueTextを追加。
+	listItem.classList.add("blueText");
 	//リスト表示要素を取得。
 	let skillList = document.getElementById("skillList");
 	//リスト表示の末尾に生成したli要素を追加。

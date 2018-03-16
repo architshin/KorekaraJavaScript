@@ -1,3 +1,5 @@
+"use strict";
+
 let name = "田中";
 let num = 556;
 let dec = 487.5;

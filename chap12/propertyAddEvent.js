@@ -1,3 +1,5 @@
+"use strict";
+
 //画面がロードされたタイミングで行う処理。
 window.onload = function() {
 	//ドロップダウン要素を取得。
@@ -31,5 +33,5 @@ window.onload = function() {
 		let paymentSelectResult = document.getElementById("paymentSelectResult");
 		//手数料を表示。
 		paymentSelectResult.textContent = paymentSelectResultStr;
-	}
-}
+	};
+};

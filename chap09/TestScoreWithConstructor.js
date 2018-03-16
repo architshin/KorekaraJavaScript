@@ -1,3 +1,5 @@
+"use strict";
+
 class TestScoreWithConstructor {
 	//コンストラクタ。
 	constructor(name = "", english = 0, math = 0, japanese = 0) {

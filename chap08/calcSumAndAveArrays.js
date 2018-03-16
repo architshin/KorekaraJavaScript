@@ -1,3 +1,5 @@
+"use strict";
+
 function calcArraySum(list) {
 	let sum = 0;
 	for(let num of list) {
@@ -6,7 +8,9 @@ function calcArraySum(list) {
 	return sum;
 }
 
-function calcAve(sum, length) {
+function calcAve(list) {
+	let sum = calcArraySum(list);
+	let length = list.length;
 	return sum / length;
 }
 
@@ -18,9 +22,9 @@ let sum1 = calcArraySum(list1);
 let sum2 = calcArraySum(list2);
 let sum3 = calcArraySum(list3);
 
-let ave1 = calcAve(sum1, list1.length);
-let ave2 = calcAve(sum2, list2.length);
-let ave3 = calcAve(sum3, list3.length);
+let ave1 = calcAve(list1);
+let ave2 = calcAve(list2);
+let ave3 = calcAve(list3);
 
 console.log("list1の合計: " + sum1 + ";平均: " + ave1);
 console.log("list2の合計: " + sum2 + ";平均: " + ave2);

@@ -1,3 +1,5 @@
+"use strict";
+
 //たろうさん用のTestScoreAdvを使って、データ表示。
 let taro = new TestScore();
 taro.setData("たろう", 92, 87, 74);

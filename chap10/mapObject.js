@@ -1,3 +1,5 @@
+"use strict";
+
 //Mapオブジェクトを生成。
 let studentNumList = new Map();
 //各クラスの人数を登録。

@@ -1,3 +1,5 @@
+"use strict";
+
 function concatenate(...name) {
 	let concatenatedName = "";
 	for(let i = 0; i < name.length; i++) {

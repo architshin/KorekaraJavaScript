@@ -1,3 +1,5 @@
+"use strict";
+
 //画面がロードされた時の処理をリスナ登録。
 window.addEventListener("DOMContentLoaded", function() {
 	//入力エリア要素を取得。
@@ -14,9 +16,9 @@ window.addEventListener("DOMContentLoaded", function() {
 		showMessageLength.textContent = msgLength + "/70";
 		//文字数が70を超えたら背景を赤に。それ以外は元通りに。
 		if(msgLength > 70) {
-			messageArea.setAttribute("class", "alertBg");
+			messageArea.classList.add("alertBg");
 		} else {
-			messageArea.removeAttribute("class");
+			messageArea.classList.remove("alertBg");
 		}
 	});
 });

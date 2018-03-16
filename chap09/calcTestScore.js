@@ -1,3 +1,5 @@
+"use strict";
+
 function printScore(name, english, math, japanese) {
 	let sum = english + math + japanese;
 	let ave = sum / 3;

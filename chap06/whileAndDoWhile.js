@@ -1,3 +1,5 @@
+"use strict";
+
 console.log("whileループ開始");
 let i = 1;
 while(i < 0) {

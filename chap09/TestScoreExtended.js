@@ -1,3 +1,5 @@
+"use strict";
+
 class TestScoreExtended extends TestScoreWithConstructor {
 	//コンストラクタ。
 	constructor(name = "", english = 0, math = 0, japanese = 0, science = 0, social = 0) {

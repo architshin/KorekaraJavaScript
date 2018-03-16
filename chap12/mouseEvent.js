@@ -1,3 +1,5 @@
+"use strict";
+
 //マウスの出入イベント時の処理関数。
 function onMouseInOutEvent(event) {
 	//イベント結果表示用リスト要素を取得。

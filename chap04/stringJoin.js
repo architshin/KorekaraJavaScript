@@ -1,3 +1,5 @@
+"use strict";
+
 let str1 = "今日の天気は、";
 let str2 = "晴れ";
 

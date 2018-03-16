@@ -1,3 +1,5 @@
+"use strict";
+
 //［タグ名で取得］ボタンクリック時の処理。
 function onTagButtonClick() {
 	//タグ名がbuttonの要素を取得。
@@ -5,9 +7,9 @@ function onTagButtonClick() {
 	//結果表示用の文字列変数を用意。
 	let result = "";
 	//取得した要素集合のループ。
-	for(let oneButton of buttonTags) {
+	for(let i = 0; i < buttonTags.length; i++) {
 		//各要素のテキスト部分を取得して結果表示文字列変数に文字列結合。
-		result += oneButton.textContent + ":";
+		result += buttonTags[i].textContent + ":";
 	}
 	//結果表示用のp要素を取得。
 	let resultP = document.getElementById("result");
@@ -22,9 +24,9 @@ function onClassButtonClick() {
 	//結果表示用の文字列変数を用意。
 	let result = "";
 	//取得した要素集合のループ。
-	for(let redElement of redElements) {
+	for(let i = 0; i < redElements.length; i++) {
 		//各要素のテキスト部分を取得して結果表示文字列変数に文字列結合。
-		result += redElement.textContent + ":";
+		result += redElements[i].textContent + ":";
 	}
 	//結果表示用のp要素を取得。
 	let resultP = document.getElementById("result");
@@ -39,11 +41,11 @@ function onNameButtonClick() {
 	//結果表示用の文字列変数を用意。
 	let result = "チェックされたもの:";
 	//取得した要素集合のループ。
-	for(let checkbox of checkboxes) {
+	for(let i = 0; i < checkboxes.length; i++) {
 		//各チェックボックス要素がチェックされていれば…
-		if(checkbox.checked) {
+		if(checkboxes[i].checked) {
 			//各要素のvalue部分を取得して結果表示文字列変数に文字列結合。
-			result += checkbox.value + ",";
+			result += checkboxes[i].value + ",";
 		}
 	}
 	//結果表示用のp要素を取得。

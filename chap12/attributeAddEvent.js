@@ -1,3 +1,5 @@
+"use strict";
+
 //［すべて…］チェックボックスをクリックしたときの処理関数。
 function onCheckallChanged() {
 	//［すべて…］チェックボックス要素を取得。
@@ -11,8 +13,8 @@ function onCheckallChanged() {
 	//name属性がskillのチェックボックス要素を取得。
 	let checkboxes = document.getElementsByName("skill");
 	//name属性がskillのチェックボックス要素をループ処理。
-	for(let checkbox of checkboxes) {
+	for(let i = 0; i < checkboxes.length; i++) {
 		//各チェックボックスのチェック状態を［すべて…］に合わせる。
-		checkbox.checked = checkall.checked;
+		checkboxes[i].checked = checkall.checked;
 	}
 }
