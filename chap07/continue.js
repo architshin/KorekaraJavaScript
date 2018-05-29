@@ -8,5 +8,5 @@ for(let i = 1; i <= 10; i++) {
 		console.log("continuePointなのでcontinue");
 		continue;
 	}
-	console.log(i + "回目のループ開終了");
+	console.log(i + "回目のループ終了");
 }

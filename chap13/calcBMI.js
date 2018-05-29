@@ -82,7 +82,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 
 		let weightStr = weightInput.value;
-		let weight = Number(weightStr)
+		let weight = Number(weightStr);
 		let weightInputMsg = document.getElementById("weightInputMsg");
 		if(weightStr.length == 0) {
 			buttonEnabled = false;
