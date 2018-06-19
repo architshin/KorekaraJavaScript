@@ -13,6 +13,6 @@ function onP2RedButtonClick() {
 function onP2DefaultButtonClick() {
 	//idがshowTextのp要素を取得。
 	let showText = document.getElementById("showText");
-	//取得したp要素のclass属性をを削除。
+	//取得したp要素のclass属性を削除。
 	showText.removeAttribute("class");
 }

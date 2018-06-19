@@ -2,7 +2,7 @@
 
 //13の倍数かどうかを調べる関数。
 function isMultiplesOf13(currentValue, index, array) {
-	return currentValue % 13 == 0;
+	return currentValue % 13 === 0;
 }
 
 //空の配列を用意。
