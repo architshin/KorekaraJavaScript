@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		//身長のバリデーションメッセージを表示するspan要素を取得。
 		let heightInputMsg = document.getElementById("heightInputMsg");
 		//未入力なら…
-		if(heightStr.length == 0) {
+		if(heightStr.length === 0) {
 			//［計算］ボタンを無効に。
 			buttonEnabled = false;
 			//バリデーションメッセージを表示。
@@ -84,7 +84,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		let weightStr = weightInput.value;
 		let weight = Number(weightStr);
 		let weightInputMsg = document.getElementById("weightInputMsg");
-		if(weightStr.length == 0) {
+		if(weightStr.length === 0) {
 			buttonEnabled = false;
 			weightInputMsg.textContent = "体重を入力してください。";
 		} else if(!Number.isFinite(weight)) {
