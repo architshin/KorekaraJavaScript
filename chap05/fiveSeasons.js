@@ -1,6 +1,6 @@
 "use strict";
 
-let month = Math.round(Math.random() * 12);
+let month = Math.round(Math.random() * 11) + 1;
 switch(month) {
 	case 3:
 	case 4:
