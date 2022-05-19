@@ -11,7 +11,7 @@ window.onload = function() {
 		//取得したvalue値を数値型に変換。
 		let paymentSelectInt = Number(paymentSelectStr);
 		//手数料表示用の文字列を用意。
-		let paymentSelectResultStr = "手数料: "
+		let paymentSelectResultStr = "手数料: ";
 		//取得したvalue値に応じて処理を分岐。
 		switch(paymentSelectInt) {
 			case 1:
@@ -27,7 +27,7 @@ window.onload = function() {
 				paymentSelectResultStr += "300円";
 				break;
 			default:
-				paymentSelectResultStr = ""
+				paymentSelectResultStr = "";
 		}
 		//手数料を表示する要素を取得。
 		let paymentSelectResult = document.getElementById("paymentSelectResult");
